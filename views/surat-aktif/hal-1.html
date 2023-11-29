@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Surat Aktif</title>
+    <link rel="stylesheet" href="/public/style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+<body class="bg-bg-main bg-cover bg-no-repeat bg-right-top h-screen px-20 font-poppins">
+<header class="xl:h-1/6 flex items-center justify-between py-5 xl:py-10 flex-wrap">
+    <aside class="flex justify-start items-start">
+        <a href="/pengajuan.html"><img class="w-1/2 xl:w-2/3 2xl:w-full object-contain" src="/public/assets/back.png" alt="back"></a>
+    </aside>
+    <aside class="flex justify-end items-start">
+        <img class="w-1/2 xl:w-2/3 2xl:w-full object-contain" src="/public/assets/logo%20fasilkom.png" alt="logo fasilkom">
+    </aside>
+</header>
+<main class="h-1/2">
+    <div class="flex items-center gap-4 h-1/4">
+        <aside class="h-full">
+            <img class="h-full" src="/public/assets/surat_aktif/icon.png" alt="main-icon">
+        </aside>
+        <aside>
+            <h1 class="font-black text-2xl xl:text-3xl 2xl:text-6xl text-red-primary">SURAT AKTIF KULIAH</h1>
+            <p class="xl:text-xl text-slate-800">Isi data diri dengan benar</p>
+        </aside>
+    </div>
+    <div class="flex flex-col items-center">
+        <div class="flex items-center gap-2">
+            <div class="flex flex-col items-center relative">
+                <h1 class="w-6 h-6 xl:w-10 xl:h-10 bg-red-primary text-slate-50 font-black xl:text-xl rounded-full flex items-center justify-center">
+                    1</h1>
+                <p class="w-[300%] xl:w-[200%] text-center absolute top-6 xl:top-10">Data diri</p>
+            </div>
+            <hr class="w-20 border-2">
+            <div class="flex flex-col items-center relative">
+                <h1 class="w-6 h-6 xl:w-10 xl:h-10 bg-slate-300 text-slate-900 font-black xl:text-xl rounded-full flex items-center justify-center">
+                    2</h1>
+                <p class="w-[300%] xl:w-[200%] text-center absolute top-6 xl:top-10">Pengajuan</p>
+            </div>
+            <hr class="w-20 border-2">
+            <div class="flex flex-col items-center relative">
+                <h1 class="w-6 h-6 xl:w-10 xl:h-10 bg-slate-300 text-slate-900 font-black xl:text-xl rounded-full flex items-center justify-center">
+                    3</h1>
+                <p class="w-[300%] xl:w-[200%] text-center absolute top-6 xl:top-10">Review</p>
+            </div>
+            <hr class="w-20 border-2">
+            <div class="flex flex-col items-center relative">
+                <h1 class="w-6 h-6 xl:w-10 xl:h-10 bg-slate-300 text-slate-900 font-black xl:text-xl rounded-full flex items-center justify-center">
+                    4</h1>
+                <p class="w-[300%] xl:w-[200%] text-center absolute top-6 xl:top-10">Struk</p>
+            </div>
+        </div>
+        <form class="mt-20 w-1/3 bg-slate-50 p-5 rounded-2xl flex flex-col gap-4 outline outline-8 outline-red-500">
+            <h2 class="font-bold">Data Pribadi</h2>
+            <hr class="bg-black border">
+            <div id="input" class="flex gap-4 my-2">
+                <label class="flex flex-col w-1/2">
+                    <p>NIM<span class="text-red-primary">*</span></p>
+                    <input class="border-2 border-slate-500 px-3 py-1 rounded-xl" type="text" name="nim" placeholder="17241010****" onchange="checkValue()" onkeyup="checkValue()">
+                </label>
+                <label class="flex flex-col w-1/2">
+                    <p>Tanggal Lahir<span class="text-red-primary">*</span></p>
+                    <input class="border-2 border-slate-500 px-3 py-1 rounded-xl" type="date" name="date" onchange="checkValue()">
+                </label>
+            </div>
+            <button id="validate" class="self-center bg-blue-300 bg-opacity-75 text-slate-500 px-6 py-3 rounded-xl font-semibold" disabled>Validasi Data Diri</button>
+        </form>
+    </div>
+</main>
+<footer class="mt-5 xl:mt-0 h-1/3 py-10 flex items-end justify-end">
+    <a href="/surat-aktif/hal-2.html" class="flex justify-end items-center"><img class="w-1/2 xl:w-2/3 2xl:w-full object-contain" src="/public/assets/next.png" alt="next"></a>
+</footer>
+<script src="/public/script/checkValue.js"></script>
+</body>
+</html>
