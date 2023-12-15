@@ -27,6 +27,9 @@ function toggleOpsi(e) {
         case "pns":
             nextBtn.href = "/surat-pns/hal-1.html";
             break;
+        case "non-pns":
+            nextBtn.href = "/surat-non-pns/hal-1.html";
+            break;
         default:
             nextBtn.href = "#";
             break;
