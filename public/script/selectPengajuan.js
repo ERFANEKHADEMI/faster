@@ -24,6 +24,9 @@ function toggleOpsi(e) {
         case "aktif":
             nextBtn.href = "/surat-aktif/hal-1.html";
             break;
+        case "pns":
+            nextBtn.href = "/surat-pns/hal-1.html";
+            break;
         default:
             nextBtn.href = "#";
             break;
