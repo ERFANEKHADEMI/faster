@@ -68,7 +68,7 @@
                     <div class="flex gap-1 bg-white border-2 border-slate-500 rounded-xl px-1 py-1">
                         <input type="text" name="nim-anggota" id="nim-anggota"
                                class="w-2/3 px-1" placeholder="17241010****">
-                        <button type="button" id="tambah-anggota" class="w-1/3 bg-blue-700 text-white rounded-xl px-2 py-1">+ Tambahkan</button>
+                        <button type="button" onclick="tambahAnggota()" id="tambah-anggota" class="w-1/3 bg-blue-700 text-white rounded-xl px-2 py-1">+ Tambahkan</button>
                     </div>
                 </label>
                 <div id="list-anggota" class="flex flex-col w-full gap-1 max-h-14 2xl:max-h-20 overflow-y-scroll">
@@ -77,21 +77,21 @@
                             <span>Firdhan nur ...</span>
                             <span>21241010xxxx</span>
                         </h2>
-                        <button type="button">X</button>
+                        <button type="button" onclick="hapusAnggota(1)">X</button>
                     </div>
                     <div class="bg-slate-200 px-4 py-2 rounded-xl flex justify-between">
                         <h2 class="flex w-1/2 justify-between">
                             <span>Firdhan nur ...</span>
                             <span>21241010xxxx</span>
                         </h2>
-                        <button type="button">X</button>
+                        <button type="button" onclick="hapusAnggota(2)">X</button>
                     </div>
                     <div class="bg-slate-200 px-4 py-2 rounded-xl flex justify-between">
                         <h2 class="flex w-1/2 justify-between">
                             <span>Firdhan nur ...</span>
                             <span>21241010xxxx</span>
                         </h2>
-                        <button type="button">X</button>
+                        <button type="button" onclick="hapusAnggota(3)">X</button>
                     </div>
                 </div>
                 <label class="flex flex-col w-full">
@@ -112,5 +112,6 @@
     <a href="/surat-lomba/hal-3.html" class="flex justify-end items-center"><img
             class="w-1/2 xl:w-2/3 2xl:w-full object-contain" src="/public/assets/next.png" alt="next"></a>
 </footer>
+<script src="/public/script/anggotaManager.js"></script>
 </body>
 </html>
