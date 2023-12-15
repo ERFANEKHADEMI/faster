@@ -15,6 +15,19 @@ function toggleOpsi(e) {
     states.opsi = e.target.id;
     opsi.classList.add("bg-blue-500");
     opsi.classList.remove("bg-white");
+
+    const nextBtn = document.getElementById("next-btn");
+    switch (states.opsi) {
+        case "lomba":
+            nextBtn.href = "/surat-lomba/hal-1.html";
+            break;
+        case "aktif":
+            nextBtn.href = "/surat-aktif/hal-1.html";
+            break;
+        default:
+            nextBtn.href = "#";
+            break;
+    }
 }
 
 const options = document.getElementsByName("option-surat");
